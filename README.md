@@ -17,9 +17,7 @@ Monitors a Sepolia address for:
 npm install
 cp .env.sample .env
 # edit .env with your WS/HTTP RPC URLs, address, and Etherscan key
-npm init -y
-npm i ethers axios dotenv
-node monitor-sepolia.js
+npm start
 ```
 
 On start, the script will:
