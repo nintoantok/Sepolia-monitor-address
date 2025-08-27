@@ -17,7 +17,7 @@ Monitors a Sepolia address for:
 npm install
 cp .env.sample .env
 # edit .env with your WS/HTTP RPC URLs, address, and Etherscan key
-npm start
+node monitor-sepolia.js
 ```
 
 On start, the script will:
@@ -32,9 +32,6 @@ On start, the script will:
 - **Internal transactions:** These are value transfers triggered inside contract execution; they are not surfaced by JSON-RPC as first-class transactions and require a tracer/indexer (Etherscan provides this via API).
 - **Decoding events:** If your monitored address is a contract and you want to decode events (`Transfer`, etc.), extend the script with an ABI and `getLogs` filter.
 
-## Scripts
-
-- `npm start` — runs the monitor.
 
 ## License
 
